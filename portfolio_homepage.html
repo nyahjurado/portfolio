@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+    <title>Girls Who Code - Nyah Jurado</title>
+  </header>
+<style>
+header {
+}
+
+body {
+  background-color: #39CCCC;
+  font-family: 'Lobster', cursive;
+  font-size: 500%;
+  color: purple;
+}
+
+p:hover {
+  color: #FEE301;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #39CCCC;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: purple;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition; margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="portfolio_aboutpage.html">About</a>
+  <a href="#">Projects</a>
+  <a href="#">Gallery</a>
+</div>
+
+<div id="main">
+  <span style="font-size:40px;cursor:pointer;position:left" onclick="openNav()">&#9776;</span>
+  <center>
+  <p>Girls Who Code<br>Portfolio<br>Nyah Jurado<br></P>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</center>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "#39CCCC";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#39CCCC";
+}
+</script>
+</body>
